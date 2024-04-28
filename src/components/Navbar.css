@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    scroll-behavior: smooth;
+}
+
+.nav-man-cont{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-left-div{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo-div{
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+}
+.logo-div>img{
+    width: 60%;
+    height: 100%;
+    cursor: pointer;
+}
+.nav-right-div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.nav-content-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.xy>h4{
+    cursor: pointer;
+}
+h4{
+    color: black;
+}
+h4:hover{
+    color: crimson;
+    transition: 0.6s;
+}
+
+.menu-div{
+    display: none;
+    padding: 6px;
+}
+.slide-div-show{
+    width: 250px;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.6s;
+    z-index: 999;
+    display: none;
+}
+.slide-div-hide{
+    width: 250px;
+    height: 60vh;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.6s;
+    z-index: 999;
+}
+
+.slide-co{
+    margin-top: 50px;
+}
+
+
+@media (min-width: 769px) and (max-width: 900px){
+    .nav-content-div{
+        display: none;
+    }
+    .menu-div{
+        margin-right: 10px;
+        display: flex;
+        cursor: pointer;
+    }
+    .slide-div-show{
+        display: flex;
+    }
+
+}
+
+@media (min-width: 100px) and (max-width: 768px){
+    .nav-content-div{
+        display: none;
+    }
+    .menu-div{
+        margin-right: 10px;
+        display: flex;
+        cursor: pointer;
+    }
+    .slide-div-show{
+        display: flex;
+    }
+    .logo-div{
+        width: 60%;
+        height: 50%;
+        cursor: pointer;
+    }
+    .logo-div>img{
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+}

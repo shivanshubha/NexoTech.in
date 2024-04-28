@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* About css  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.about-section{
+    margin-top: 20px;
+    width: 100%;
+    min-height: 70vh;
+    background-color: #ddd;
+}
+
+.about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+
+.about-content-section{
+    float: left;
+    width: 55%;
+
+}
+
+
+.image-about-section{
+    float: right;
+    width: 40%; 
+}
+
+.image-about-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px ;
+}
+
+
+.about-title{
+    text-transform: uppercase;
+    font-size: 28px;
+    color: black;
+
+}
+
+.about-content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 19px;
+}
+
+
+
+.about-content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #232323;
+}
+
+.about-button{
+    margin-top: 30px;
+}
+
+.about-button a{
+ background-color: #3d3d3d;
+ padding: 12px 40px;
+ text-decoration: none;
+ color: #fff;
+ font-size: 25px;
+ letter-spacing: 1.5px;
+}
+
+
+.about-button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+
+.about-social{
+    /* margin: 40px 40px; */
+    margin-top: 33px;
+    display: flex;
+    gap: 13px;
+}
+
+
+.about-social a{
+    color: #a52a2a ;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+
+
+.about-social a:hover{
+    color: #3d3d3d;
+}
+
+
+.about-title h1{
+    transition: .6s;
+}
+
+.about-title h1:hover{
+    border-bottom: 1px solid black;
+}
+
+
+@media screen and (max-width:768px) {
+    .home-product-cont{
+        width: 100%;
+        /* height: 90%; */
+        display: flex;
+        justify-content: space-around;
+        /* border: 1px solid red; */
+        flex-wrap: wrap;
+    }
+    .product-card{
+        width: 200px;
+        height: 260px;
+        /* border: 1px solid green; */
+    }
+    
+    .about-container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+
+
+    .about-content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+
+
+    .image-about-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+        
+    }
+
+    /* .image-about-section img{
+        margin-bottom: 123px;
+    } */
+
+
+    
+.about-title{
+    text-align: center;
+    font: 19px;
+
+}
+
+
+.about-button{
+    text-align: center;
+}
+
+.about-social{
+    text-align: center;
+    margin-left: 73px;
+    margin-bottom: 23px;
+}
+
+
+.about-title h1{
+    border-bottom: 1px solid black;
+}
+
+
+
+
+}

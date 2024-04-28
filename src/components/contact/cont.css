@@ -1,0 +1,177 @@
+/* Google Font CDN Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+
+
+.contact-main-main-cont{
+    margin-top: 70px;
+    width: 100%;
+    min-height: 100vh;
+    width: 100%;
+    background: #c8e8e9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.flo-container{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.flo-container .flo-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flo-container .flo-content .flo-left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.flo-content .flo-left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.flo-content .flo-left-side .flo-details{
+  margin: 14px;
+  text-align: center;
+}
+.flo-content .flo-left-side .flo-details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.flo-content .flo-left-side .flo-details .flo-topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.flo-content .flo-left-side .flo-details .flo-text-one,
+.flo-content .flo-left-side .flo-details .flo-text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.flo-container .flo-content .flo-right-side{
+  margin-top: 23px;
+  margin-bottom: 23px;
+  width: 75%;
+  margin-left: 75px;
+}
+.flo-content .flo-right-side .flo-topic-text{
+  margin-bottom: 16px;
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+
+
+.flo-content .flo-right-side p{
+  margin-bottom: 17px;
+}
+.flo-right-side .flo-input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+.flo-button button{
+  border: 2px solid black;
+  width: 200px;
+  height: 50px;
+  transition: 0.8s;
+}
+
+.flo-button button:hover{
+  background-color: black;
+  color: white;
+  transform: translateX(12px);
+}
+
+.flo-right-side .flo-input-box input,
+.flo-right-side .flo-input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.flo-right-side .flo-message-box{
+  min-height: 110px;
+}
+.flo-right-side .flo-input-box textarea{
+  padding-top: 6px;
+}
+.flo-right-side .flo-button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.flo-right-side .flo-button input[type="button"]{
+  color: #fff;
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  background: #3e2093;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.flo-button input[type="button"]:hover{
+  background: #5029bc;
+}
+
+@media (max-width: 950px) {
+  .flo-container{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .flo-container .flo-content .flo-right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .flo-container{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .flo-container .flo-content{
+    flex-direction: column-reverse;
+  }
+ .flo-container .flo-content .flo-left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .flo-container .flo-content .flo-left-side::before{
+   display: none;
+ }
+ .flo-container .flo-content .flo-right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
